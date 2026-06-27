@@ -37,17 +37,21 @@ could possibly be, and why the two operations are reflections of each other.
 
 When $n$ is a positive whole number, $a^n$ is nothing mysterious — it is just
 shorthand for repeated multiplication:
+
 $$ a^n = \underbrace{a \cdot a \cdots a}_{n \text{ factors}}. $$
 
 From this single picture, three rules drop out *by counting*. If I multiply $a^m$
 by $a^n$, I am putting $m$ factors next to $n$ factors, so I have $m+n$ of them:
+
 $$ a^m \cdot a^n = a^{m+n}. \qquad \text{(L1)} $$
 
 If I raise $a^m$ to the power $n$, I have $n$ copies of a block of $m$ factors:
+
 $$ (a^m)^n = a^{mn}. \qquad \text{(L2)} $$
 
 And a product raised to a power distributes, because multiplication doesn't care
 about order:
+
 $$ (ab)^n = a^n b^n. \qquad \text{(L3)} $$
 
 These are not laws handed down from above; they are *observations* about what
@@ -76,17 +80,21 @@ rule.
 
 **Zero.** Whatever $a^0$ is, (L1) says $a^1 \cdot a^0 = a^{1+0} = a^1$. So $a^0$
 must be the number that leaves $a$ unchanged under multiplication:
+
 $$ a^0 = 1 \qquad (a \neq 0). $$
+
 Not a convention, not a special case to memorize — a *consequence*.
 
 **Negative exponents.** Whatever $a^{-n}$ is, (L1) says
 $a^n \cdot a^{-n} = a^{n + (-n)} = a^0 = 1$. So $a^{-n}$ must be the reciprocal of
 $a^n$:
+
 $$ a^{-n} = \frac{1}{a^n}. $$
 
 **Fractional exponents.** Whatever $a^{1/n}$ is, applying (L1) $n$ times (or
 using (L2)) gives $\left(a^{1/n}\right)^n = a^{\,n \cdot \frac{1}{n}} = a^1 = a$.
 So $a^{1/n}$ must be a number whose $n$th power is $a$ — that is, the $n$th root:
+
 $$ a^{1/n} = \sqrt[n]{a}, \qquad a^{p/q} = \sqrt[q]{a^p}. $$
 
 Every "rule for exponents" you have ever memorized is really just (L1) refusing
@@ -119,11 +127,14 @@ to be broken. That is the whole secret.
 
 Fix the base and let the *exponent* vary. The result is the **exponential
 function**
+
 $$ f(x) = a^x \qquad (a > 0,\ a \neq 1). $$
 
 Rewriting the master rule (L1) in this language gives the property that *defines*
 exponential behavior:
+
 $$ f(x + y) = f(x)\,f(y). $$
+
 In words: **adding in the input multiplies in the output.** This is the precise
 sense in which exponential growth differs from the growth you are used to.
 
@@ -152,7 +163,7 @@ the integers. Sequences whose terms grow by a constant *ratio* are exponential;
 sequences that grow by a constant *difference* are linear (arithmetic). Keep this
 pairing in mind — it is the seed of the whole chapter:
 
-$$\boxed{\;\text{arithmetic : difference :: geometric : ratio}\;}$$
+$$ \boxed{\;\text{arithmetic : difference :: geometric : ratio}\;} $$
 
 > **Example (doubling time).** A colony of bacteria doubles every $3$ hours.
 > Starting from $1000$, the count after $t$ hours is $N(t) = 1000 \cdot 2^{t/3}$.
@@ -165,6 +176,7 @@ $$\boxed{\;\text{arithmetic : difference :: geometric : ratio}\;}$$
 Exponential growth raises an irresistible question. We know $2^{10} = 1024$. But
 suppose I ask the reverse: *to what power must I raise $2$ to get $1024$?* The
 answer, $10$, has a name. It is the **logarithm base $2$ of $1024$**:
+
 $$ \log_a x = y \quad\text{means exactly}\quad a^y = x. $$
 
 A logarithm is **an exponent** — specifically, the exponent you need. Read
@@ -175,10 +187,12 @@ sentence.
 Because the logarithm just *undoes* exponentiation, the laws of logarithms are
 the laws of exponents seen in a mirror. The master rule
 $a^{m} a^{n} = a^{m+n}$, read backwards, becomes the master rule of logarithms:
+
 $$ \log_a(xy) = \log_a x + \log_a y. \qquad \text{(the mirror of L1)} $$
 
 Take a moment to feel how remarkable that statement is. **The logarithm converts
 multiplication into addition.** The other two laws follow the same way:
+
 $$ \log_a\!\left(\frac{x}{y}\right) = \log_a x - \log_a y, \qquad
    \log_a\!\left(x^k\right) = k\,\log_a x. $$
 
@@ -196,7 +210,9 @@ $$ \log_a\!\left(\frac{x}{y}\right) = \log_a x - \log_a y, \qquad
 
 **Change of base.** Calculators carry only two logarithms (base $10$ and the
 natural base $e$ of the next section), yet you can get any base from any other:
+
 $$ \log_a x = \frac{\log_b x}{\log_b a}. $$
+
 This isn't a new fact to memorize; it falls straight out of the definition. Let
 $y = \log_a x$, so $a^y = x$. Take $\log_b$ of both sides and use the power law:
 $y \log_b a = \log_b x$, which rearranges to the formula. Notice the family
@@ -219,7 +235,9 @@ the scale means *multiply by a fixed factor*.
 
 One especially useful consequence, well worth knowing for competitions: **the
 number of digits of a positive integer $N$ in base $10$ is**
+
 $$ \lfloor \log_{10} N \rfloor + 1. $$
+
 The reason is exactly the scale idea. A number has $d$ digits precisely when it
 lies in $[10^{\,d-1}, 10^{\,d})$, i.e. when $d - 1 \le \log_{10} N < d$. So
 $\log_{10} N$, rounded down, is one less than the digit count. The logarithm
@@ -234,7 +252,9 @@ $\log_{10} N$, rounded down, is one less than the digit count. The logarithm
 
 We have treated every base $a$ on equal footing, and for algebra that is right.
 But one base is special, and you will meet it everywhere later: the number
+
 $$ e = 2.71828\ldots $$
+
 It arises the moment growth becomes *continuous*. Suppose a bank pays $100\%$
 interest per year. Paid once, your dollar becomes $\$2$. Paid as $50\%$ twice, it
 becomes $(1.5)^2 = \$2.25$. Paid as $\tfrac1n$ of the interest $n$ times, you get
@@ -249,13 +269,12 @@ story is told properly later.
 
 - **One master rule**, $a^m a^n = a^{m+n}$, generates everything.
 - **Permanence of form** forces the extended definitions, not convention:
-  $$ a^0 = 1, \qquad a^{-n} = \frac{1}{a^n}, \qquad a^{p/q} = \sqrt[q]{a^p}\quad(a>0). $$
+  $a^0 = 1$, $\ a^{-n} = \frac{1}{a^n}$, $\ a^{p/q} = \sqrt[q]{a^p}$ (for $a>0$).
 - **Exponential = constant ratio per step:** $f(x+y) = f(x)f(y)$; it is the
   continuous geometric sequence, and it outgrows every polynomial.
 - **A logarithm is an exponent:** $\log_a x = y \iff a^y = x$.
-- **The mirror laws** turn multiplication into addition:
-  $$ \log_a(xy) = \log_a x + \log_a y, \quad \log_a(x^k) = k\log_a x, \quad
-     \log_a x = \frac{\log_b x}{\log_b a}. $$
+- **The mirror laws** turn multiplication into addition: $\log_a(xy) = \log_a x +
+  \log_a y$, $\ \log_a(x^k) = k\log_a x$, and $\log_a x = \frac{\log_b x}{\log_b a}$.
 - **Logs measure scale:** a base-$10$ integer $N$ has $\lfloor \log_{10}N\rfloor + 1$
   digits.
 
@@ -292,11 +311,10 @@ story is told properly later.
     $f(xy) = f(x) + f(y)$ for all positive $x, y$, and $f(2) = 1$. Find $f(1)$,
     $f(8)$, $f\!\left(\tfrac12\right)$, and $f(\sqrt2)$. What familiar function
     must $f$ be?
-11. (AMC-flavored.) The number $2^{2025}$ is written out in full. Its leading
-    (leftmost) digit is some value, and it has a certain number of digits. Using
+11. (AMC-flavored.) The number $2^{2025}$ is written out in full. Using
     $\log_{10}2 \approx 0.30103$, find how many digits $2^{2025}$ has. *Then*,
     harder: explain how the fractional part of $2025\log_{10}2$ would let you
-    recover the leading digit.
+    recover the leading (leftmost) digit.
 
 ## Solutions
 
@@ -319,8 +337,10 @@ the point was the quotient law.
 
 **4.** Change every factor to base $2$: $\log_k(k+1) = \dfrac{\log_2(k+1)}{\log_2 k}$.
 The product telescopes,
-$$\frac{\log_2 3}{\log_2 2}\cdot\frac{\log_2 4}{\log_2 3}\cdots\frac{\log_2 8}{\log_2 7}
-= \frac{\log_2 8}{\log_2 2} = \log_2 8 = 3.$$
+
+$$ \frac{\log_2 3}{\log_2 2}\cdot\frac{\log_2 4}{\log_2 3}\cdots\frac{\log_2 8}{\log_2 7}
+= \frac{\log_2 8}{\log_2 2} = \log_2 8 = 3. $$
+
 Every interior term cancels — the same collapse you'll see in telescoping sums
 and products throughout competition math.
 
@@ -331,7 +351,7 @@ lesson: a logarithm silently demands a positive argument, and that demand can
 delete an algebraically valid root.
 
 **6.** Three weeks is $21$ days, which is $21/5 = 4.2$ half-lives, so the fraction
-remaining is $2^{-4.2} = 2^{-4.2}$. Numerically $2^{4.2} \approx 18.4$, so about
+remaining is $2^{-4.2}$. Numerically $2^{4.2} \approx 18.4$, so about
 $1/18.4 \approx 0.054$, a little over $5\%$.
 
 **7.** $\log_{10}(5^{100}) = 100\log_{10}5 = 100\log_{10}\frac{10}{2} =

@@ -20,6 +20,7 @@ freely between the three standard forms.
 ### 1. The standard form and the shape of a parabola
 
 The **standard form** is
+
 $$ f(x) = ax^2 + bx + c, \qquad a \neq 0. $$
 
 The sign of $a$ controls the orientation:
@@ -39,7 +40,9 @@ point where the parabola meets this axis is the **vertex** — the lowest point
 (if $a>0$) or highest point (if $a<0$).
 
 The axis of symmetry is
+
 $$ x = -\frac{b}{2a}, $$
+
 and the vertex is the point $\left(-\dfrac{b}{2a},\; f\!\left(-\dfrac{b}{2a}\right)\right)$.
 
 > **Example.** For $f(x) = x^2 - 6x + 5$ we have $a=1,\ b=-6$, so the axis is
@@ -49,16 +52,22 @@ and the vertex is the point $\left(-\dfrac{b}{2a},\; f\!\left(-\dfrac{b}{2a}\rig
 ### 3. Vertex form and completing the square
 
 **Vertex form** writes the function as
+
 $$ f(x) = a(x - h)^2 + k, $$
+
 where $(h, k)$ is the vertex directly. We pass from standard to vertex form by
 **completing the square**.
 
 > **Example.** Convert $f(x) = x^2 - 6x + 5$.
+>
 > $$ x^2 - 6x + 5 = (x^2 - 6x + 9) - 9 + 5 = (x-3)^2 - 4. $$
+>
 > So $h = 3,\ k = -4$, agreeing with the vertex found above.
 
 In general, completing the square on $ax^2 + bx + c$ gives
+
 $$ a\left(x + \frac{b}{2a}\right)^2 + \left(c - \frac{b^2}{4a}\right), $$
+
 which is where the formula $x = -\tfrac{b}{2a}$ comes from.
 
 ### 4. Roots and the quadratic formula
@@ -66,6 +75,7 @@ which is where the formula $x = -\tfrac{b}{2a}$ comes from.
 The **roots** (or zeros) are the $x$-values where $f(x) = 0$, i.e. where the
 parabola crosses the $x$-axis. Solving $ax^2 + bx + c = 0$ gives the
 **quadratic formula**:
+
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}. $$
 
 The quantity under the root, the **discriminant** $D = b^2 - 4ac$, tells you how
@@ -83,9 +93,11 @@ many real roots there are:
 ### 5. Factored form and Vieta's formulas
 
 When the roots $x_1, x_2$ are real, the function factors as
+
 $$ f(x) = a(x - x_1)(x - x_2). $$
 
 Expanding and matching coefficients gives **Vieta's formulas**:
+
 $$ x_1 + x_2 = -\frac{b}{a}, \qquad x_1 x_2 = \frac{c}{a}. $$
 
 These let you read off or check roots without the full formula.

@@ -25,10 +25,15 @@ Each chapter is a single Markdown file in `chapters/`, prefixed with a two-digit
 number for ordering. Math is written in LaTeX between `$...$` (inline) and
 `$$...$$` (display), which renders on GitHub and in most Markdown viewers.
 
-> **GitHub math gotcha.** GitHub renders math with MathJax but does **not**
-> support `\tag{...}` for equation labels — a `$$ … \tag{…} $$` block silently
-> fails and shows raw source. To label an equation, put the label inside the math
-> as text instead, e.g. `$$ a^m a^n = a^{m+n}. \qquad \text{(L1)} $$`.
+> **GitHub math gotchas.** GitHub's MathJax rendering has two traps that silently
+> dump raw LaTeX instead of rendering:
+>
+> 1. **Display blocks need blank lines around them.** A `$$ … $$` block must have
+>    a blank line *before and after* it (and, inside a blockquote or list, a `>`
+>    or indented blank line), or GitHub fuses it into the surrounding paragraph
+>    and won't render it. Inline `$…$` does not need this.
+> 2. **No `\tag{…}`.** It is unsupported; put the label inside the math as text,
+>    e.g. `$$ a^m a^n = a^{m+n}. \qquad \text{(L1)} $$`.
 
 ## Chapter format
 
