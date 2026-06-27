@@ -1,8 +1,12 @@
 # Math Topics
 
-A collection of self-contained chapters on high school mathematics. Each chapter
-presents the theory ("exposition") and then a graded set of exercises with
-worked solutions.
+A collection of self-contained chapters on high school mathematics, written for a
+mathematically mature audience. Each chapter presents the theory ("exposition")
+as a coherent essay and then a graded set of exercises with worked solutions.
+
+**Before writing or revising anything, read [PHILOSOPHY.md](PHILOSOPHY.md).** It
+defines the audience, the purpose, and the standard of exposition (Courant,
+Kolmogorov, AoPS) that every chapter is held to.
 
 ## Structure
 
@@ -34,7 +38,7 @@ Every chapter follows the same skeleton (see `chapters/_TEMPLATE.md`):
 
 | # | Chapter | Status |
 |---|---------|--------|
-| 01 | [Quadratic Functions](chapters/01-quadratic-functions.md) | draft |
+| 01 | [Quadratic Functions](chapters/01-quadratic-functions.md) | needs revision — predates PHILOSOPHY.md |
 
 ## Contributing a chapter
 
