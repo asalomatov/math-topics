@@ -25,8 +25,8 @@ Each chapter is a single Markdown file in `chapters/`, prefixed with a two-digit
 number for ordering. Math is written in LaTeX between `$...$` (inline) and
 `$$...$$` (display), which renders on GitHub and in most Markdown viewers.
 
-> **GitHub math gotchas.** GitHub's MathJax rendering has two traps that silently
-> dump raw LaTeX instead of rendering:
+> **GitHub math gotchas.** GitHub's MathJax rendering has several traps that
+> silently dump raw LaTeX instead of rendering:
 >
 > 1. **Display blocks need blank lines around them.** A `$$ … $$` block must have
 >    a blank line *before and after* it (and, inside a blockquote or list, a `>`
@@ -37,6 +37,13 @@ number for ordering. Math is written in LaTeX between `$...$` (inline) and
 > 3. **A closing `$` may not touch a letter.** `$n$th` fails to render (the `t`
 >    abuts the `$`); a hyphen or space is fine (`$x$-axis` works). For ordinals,
 >    fold the suffix into the math: `$n^{\text{th}}$`, `$6^{\text{th}}$`.
+> 4. **No `$…$` inside `*italics*` or `**bold**`.** Math nested in emphasis won't
+>    render (italics show raw `$…$`; bold may render the math but break the bold).
+>    Keep math outside emphasis spans.
+>
+> And one *rendering* (not failure) tip: inline use `\frac`, not `\dfrac` —
+> `\dfrac` forces full size and overflows the line. Promote any multi-step
+> computation to its own `$$ … $$` display block.
 
 ## Chapter format
 

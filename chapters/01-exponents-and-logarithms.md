@@ -101,9 +101,11 @@ Every "rule for exponents" you have ever memorized is really just (L1) refusing
 to be broken. That is the whole secret.
 
 > **Example.** Evaluate $8^{-2/3}$. Read the exponent as instructions:
-> $8^{-2/3} = \dfrac{1}{8^{2/3}} = \dfrac{1}{\left(\sqrt[3]{8}\right)^2}
-> = \dfrac{1}{2^2} = \dfrac14.$ Negative means *reciprocal*, the $3$ in the
-> denominator means *cube root*, the $2$ means *square*.
+>
+> $$ 8^{-2/3} = \frac{1}{8^{2/3}} = \frac{1}{\left(\sqrt[3]{8}\right)^2} = \frac{1}{2^2} = \frac14. $$
+>
+> Negative means *reciprocal*, the $3$ in the denominator means *cube root*, the
+> $2$ means *square*.
 
 > **A necessary restriction.** For these fractional definitions to behave, we
 > require the base $a > 0$. The trouble is that even roots of negatives escape
@@ -174,13 +176,13 @@ $$ \boxed{\;\text{arithmetic : difference :: geometric : ratio}\;} $$
 ### 4. Logarithms: running the machine backwards
 
 Exponential growth raises an irresistible question. We know $2^{10} = 1024$. But
-suppose I ask the reverse: *to what power must I raise $2$ to get $1024$?* The
-answer, $10$, has a name. It is the **logarithm base $2$ of $1024$**:
+suppose I ask the *reverse*: to what power must I raise $2$ to get $1024$? The
+answer, $10$, has a name. It is the **logarithm base 2 of 1024**:
 
 $$ \log_a x = y \quad\text{means exactly}\quad a^y = x. $$
 
 A logarithm is **an exponent** — specifically, the exponent you need. Read
-$\log_a x$ aloud as *"the power to which $a$ must be raised to give $x$."* Every
+$\log_a x$ aloud as "the power to which $a$ must be raised to give $x$." Every
 fact about logarithms becomes obvious if you keep translating back to that
 sentence.
 
@@ -328,14 +330,14 @@ whatever you multiply $a$ by to get $1$ — its reciprocal — so $a^{-1} = 1/a$
 point of the exercise: these are *forced*, not decreed.
 
 **2.** $27^{2/3} = (\sqrt[3]{27})^2 = 3^2 = 9$. $\;16^{-3/4} =
-\dfrac{1}{(\sqrt[4]{16})^3} = \dfrac{1}{2^3} = \dfrac18$. $\;\left(\tfrac19\right)^{-1/2}
+\frac{1}{(\sqrt[4]{16})^3} = \frac{1}{2^3} = \frac18$. $\;\left(\tfrac19\right)^{-1/2}
 = \left(9\right)^{1/2} = 3$ (the negative exponent flips the fraction first).
 
-**3.** $\log_5 12 - \log_5 4 = \log_5 \dfrac{12}{4} = \log_5 3$. As a decimal that
+**3.** $\log_5 12 - \log_5 4 = \log_5 \frac{12}{4} = \log_5 3$. As a decimal that
 is between $0$ and $1$ since $3 < 5$; it is not a "nice" number, which is fine —
 the point was the quotient law.
 
-**4.** Change every factor to base $2$: $\log_k(k+1) = \dfrac{\log_2(k+1)}{\log_2 k}$.
+**4.** Change every factor to base $2$: $\log_k(k+1) = \frac{\log_2(k+1)}{\log_2 k}$.
 The product telescopes,
 
 $$ \frac{\log_2 3}{\log_2 2}\cdot\frac{\log_2 4}{\log_2 3}\cdots\frac{\log_2 8}{\log_2 7}
@@ -346,7 +348,7 @@ and products throughout competition math.
 
 **5.** Combine: $\log_2[x(x-2)] = 3$, so $x(x-2) = 2^3 = 8$, i.e.
 $x^2 - 2x - 8 = 0$, giving $x = 4$ or $x = -2$. But the original
-$\log_2(x-2)$ requires $x > 2$, so $x = -2$ is illegal. **Answer: $x = 4$.** The
+$\log_2(x-2)$ requires $x > 2$, so $x = -2$ is illegal. **Answer:** $x = 4$. The
 lesson: a logarithm silently demands a positive argument, and that demand can
 delete an algebraically valid root.
 
@@ -359,8 +361,8 @@ $1/18.4 \approx 0.054$, a little over $5\%$.
 $= \lfloor 69.897\rfloor + 1 = 70$. (Notice we never needed $\log_{10}5$ directly
 — we manufactured it from $\log_{10}2$.)
 
-**8.** Write $\log_2 x = t$. Then $\log_4 x = \dfrac{\log_2 x}{\log_2 4} =
-\dfrac t2$ and $\log_8 x = \dfrac t3$. The equation becomes
+**8.** Write $\log_2 x = t$. Then $\log_4 x = \frac{\log_2 x}{\log_2 4} =
+\frac t2$ and $\log_8 x = \frac t3$. The equation becomes
 $t\left(1 + \tfrac12 + \tfrac13\right) = t \cdot \tfrac{11}{6} = 11$, so $t = 6$
 and $x = 2^6 = 64$.
 

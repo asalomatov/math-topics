@@ -43,7 +43,7 @@ The axis of symmetry is
 
 $$ x = -\frac{b}{2a}, $$
 
-and the vertex is the point $\left(-\dfrac{b}{2a},\; f\!\left(-\dfrac{b}{2a}\right)\right)$.
+and the vertex is the point $\left(-\frac{b}{2a},\; f\!\left(-\frac{b}{2a}\right)\right)$.
 
 > **Example.** For $f(x) = x^2 - 6x + 5$ we have $a=1,\ b=-6$, so the axis is
 > $x = -\frac{-6}{2} = 3$. Then $f(3) = 9 - 18 + 5 = -4$, so the vertex is
@@ -109,10 +109,10 @@ These let you read off or check roots without the full formula.
 
 - **Three forms:** standard $ax^2+bx+c$, vertex $a(x-h)^2+k$, factored
   $a(x-x_1)(x-x_2)$.
-- **Axis of symmetry:** $x = -\dfrac{b}{2a}$; the vertex sits on it.
-- **Quadratic formula:** $x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}$.
+- **Axis of symmetry:** $x = -\frac{b}{2a}$; the vertex sits on it.
+- **Quadratic formula:** $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$.
 - **Discriminant** $D = b^2 - 4ac$: sign gives the number of real roots.
-- **Vieta:** $x_1 + x_2 = -\dfrac{b}{a}$, $\ x_1 x_2 = \dfrac{c}{a}$.
+- **Vieta:** $x_1 + x_2 = -\frac{b}{a}$, $\ x_1 x_2 = \frac{c}{a}$.
 
 ## Exercises
 
@@ -144,10 +144,10 @@ These let you read off or check roots without the full formula.
 
 **3.** $x^2 + 8x + 11 = (x^2 + 8x + 16) - 16 + 11 = (x+4)^2 - 5$. Vertex $(-4, -5)$.
 
-**4.** $D = 49 - 24 = 25$, so $x = \dfrac{7 \pm 5}{4}$, giving $x = 3$ and
+**4.** $D = 49 - 24 = 25$, so $x = \frac{7 \pm 5}{4}$, giving $x = 3$ and
 $x = \tfrac{1}{2}$.
 
-**5.** Sum $= -\dfrac{-12}{3} = 4$; product $= \dfrac{5}{3}$.
+**5.** Sum $= -\frac{-12}{3} = 4$; product $= \frac{5}{3}$.
 
 **6.** One real root means $D = 0$: $m^2 - 36 = 0$, so $m = \pm 6$.
 
