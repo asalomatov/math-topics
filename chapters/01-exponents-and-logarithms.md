@@ -245,10 +245,11 @@ lies in $[10^{\,d-1}, 10^{\,d})$, i.e. when $d - 1 \le \log_{10} N < d$. So
 $\log_{10} N$, rounded down, is one less than the digit count. The logarithm
 *counts the digits* because digits are exactly the scale of a number in base ten.
 
-> **Example.** How many digits does $2^{100}$ have? Using $\log_{10}2 \approx
-> 0.30103$, we get $\log_{10}(2^{100}) = 100 \log_{10}2 \approx 30.103$, so the
-> count is $\lfloor 30.103 \rfloor + 1 = 31$ digits. We have learned the *size*
-> of a number we could never write out by hand, by measuring its scale.
+> **Example.** How many digits does $2^{100}$ have? Using
+> $\log_{10}2 \approx 0.30103$, we get
+> $\log_{10}(2^{100}) = 100 \log_{10}2 \approx 30.103$, so the count is
+> $\lfloor 30.103 \rfloor + 1 = 31$ digits. We have learned the *size* of a
+> number we could never write out by hand, by measuring its scale.
 
 ### 6. A glimpse ahead: the natural base $e$
 
@@ -258,10 +259,10 @@ But one base is special, and you will meet it everywhere later: the number
 $$ e = 2.71828\ldots $$
 
 It arises the moment growth becomes *continuous*. Suppose a bank pays $100\%$
-interest per year. Paid once, your dollar becomes $\$2$. Paid as $50\%$ twice, it
-becomes $(1.5)^2 = \$2.25$. Paid as $\tfrac1n$ of the interest $n$ times, you get
-$\left(1 + \tfrac1n\right)^n$ — and as the compounding gets finer and finer,
-$n \to \infty$, this settles on $e$. The logarithm to base $e$, written $\ln x$,
+interest per year. Paid once, your dollar becomes \$2. Paid as $50\%$ twice, it
+becomes $(1.5)^2 = 2.25$ dollars. Paid as $\tfrac1n$ of the interest $n$ times,
+you get $\left(1 + \tfrac1n\right)^n$ dollars — and as the compounding gets finer
+and finer, $n \to \infty$, this settles on $e$. The logarithm to base $e$, written $\ln x$,
 is called the **natural logarithm**, and it is "natural" because the exponential
 $e^x$ is the one function that is its own rate of change — the fact that makes it
 the backbone of calculus. We point at it now only so the name is familiar; the
@@ -275,8 +276,9 @@ story is told properly later.
 - **Exponential = constant ratio per step:** $f(x+y) = f(x)f(y)$; it is the
   continuous geometric sequence, and it outgrows every polynomial.
 - **A logarithm is an exponent:** $\log_a x = y \iff a^y = x$.
-- **The mirror laws** turn multiplication into addition: $\log_a(xy) = \log_a x +
-  \log_a y$, $\ \log_a(x^k) = k\log_a x$, and $\log_a x = \frac{\log_b x}{\log_b a}$.
+- **The mirror laws** turn multiplication into addition:
+  $\log_a(xy) = \log_a x + \log_a y$, $\ \log_a(x^k) = k\log_a x$, and
+  $\log_a x = \frac{\log_b x}{\log_b a}$.
 - **Logs measure scale:** a base-$10$ integer $N$ has $\lfloor \log_{10}N\rfloor + 1$
   digits.
 
@@ -329,9 +331,9 @@ $a\neq0$). From $a^1 a^{-1} = a^{1+(-1)} = a^0 = 1$, the factor $a^{-1}$ is
 whatever you multiply $a$ by to get $1$ — its reciprocal — so $a^{-1} = 1/a$. The
 point of the exercise: these are *forced*, not decreed.
 
-**2.** $27^{2/3} = (\sqrt[3]{27})^2 = 3^2 = 9$. $\;16^{-3/4} =
-\frac{1}{(\sqrt[4]{16})^3} = \frac{1}{2^3} = \frac18$. $\;\left(\tfrac19\right)^{-1/2}
-= \left(9\right)^{1/2} = 3$ (the negative exponent flips the fraction first).
+**2.** $27^{2/3} = (\sqrt[3]{27})^2 = 3^2 = 9$.
+$16^{-3/4} = \frac{1}{(\sqrt[4]{16})^3} = \frac{1}{2^3} = \frac18$.
+$\left(\tfrac19\right)^{-1/2} = 9^{1/2} = 3$ (the negative exponent flips the fraction first).
 
 **3.** $\log_5 12 - \log_5 4 = \log_5 \frac{12}{4} = \log_5 3$. As a decimal that
 is between $0$ and $1$ since $3 < 5$; it is not a "nice" number, which is fine —
@@ -356,19 +358,17 @@ delete an algebraically valid root.
 remaining is $2^{-4.2}$. Numerically $2^{4.2} \approx 18.4$, so about
 $1/18.4 \approx 0.054$, a little over $5\%$.
 
-**7.** $\log_{10}(5^{100}) = 100\log_{10}5 = 100\log_{10}\frac{10}{2} =
-100(1 - \log_{10}2) \approx 100(0.69897) = 69.897$. Digit count
-$= \lfloor 69.897\rfloor + 1 = 70$. (Notice we never needed $\log_{10}5$ directly
+**7.** $\log_{10}(5^{100}) = 100\log_{10}5 = 100\log_{10}\frac{10}{2} = 100(1 - \log_{10}2) \approx 100(0.69897) = 69.897$.
+Digit count $= \lfloor 69.897\rfloor + 1 = 70$. (Notice we never needed $\log_{10}5$ directly
 — we manufactured it from $\log_{10}2$.)
 
-**8.** Write $\log_2 x = t$. Then $\log_4 x = \frac{\log_2 x}{\log_2 4} =
-\frac t2$ and $\log_8 x = \frac t3$. The equation becomes
-$t\left(1 + \tfrac12 + \tfrac13\right) = t \cdot \tfrac{11}{6} = 11$, so $t = 6$
-and $x = 2^6 = 64$.
+**8.** Write $\log_2 x = t$. Then $\log_4 x = \frac{\log_2 x}{\log_2 4} = \frac t2$ and $\log_8 x = \frac t3$.
+The equation becomes $t\left(1 + \tfrac12 + \tfrac13\right) = t \cdot \tfrac{11}{6} = 11$,
+so $t = 6$ and $x = 2^6 = 64$.
 
-**9.** Raise both to the $6^{\text{th}}$ power (the least common multiple of the roots'
-orders): $\left(\sqrt2\right)^6 = 2^3 = 8$ while $\left(\sqrt[3]{3}\right)^6 =
-3^2 = 9$. Since $9 > 8$ and sixth powers preserve order for positive numbers,
+**9.** Raise both to the $6^{\text{th}}$ power (the least common multiple of the
+roots' orders): $\left(\sqrt2\right)^6 = 2^3 = 8$ while $\left(\sqrt[3]{3}\right)^6 = 3^2 = 9$.
+Since $9 > 8$ and sixth powers preserve order for positive numbers,
 $\sqrt[3]{3} > \sqrt2$. The technique — turn $\sqrt2$ vs $\sqrt[3]3$ into the
 trivial $8$ vs $9$ — is worth more than the answer.
 
@@ -382,8 +382,8 @@ exactly $\log_2$; indeed $f(x) = \log_2 x$ for every positive $x$. You have
 **11.** $\log_{10}(2^{2025}) = 2025 \cdot 0.30103 \approx 609.59$, so the digit
 count is $\lfloor 609.59 \rfloor + 1 = 610$. For the leading digit: write
 $2025\log_{10}2 = 609 + 0.59\ldots$ The integer part $609$ fixes the *scale*
-($2^{2025}$ is between $10^{609}$ and $10^{610}$); the fractional part $f \approx
-0.59$ fixes the *digits*, because $2^{2025} = 10^{609} \cdot 10^{f}$ and
+($2^{2025}$ is between $10^{609}$ and $10^{610}$); the fractional part
+$f \approx 0.59$ fixes the *digits*, because $2^{2025} = 10^{609} \cdot 10^{f}$ and
 $10^{0.59} \approx 3.9$. So the number looks like $3.9\ldots \times 10^{609}$ —
 its leading digit is $3$. This split of $\log_{10} N$ into integer part (scale)
 and fractional part (digits) is §5's idea pushed to its conclusion.

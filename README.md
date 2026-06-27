@@ -42,10 +42,17 @@ number for ordering. Math is written in LaTeX between `$...$` (inline) and
 > 4. **No `$…$` inside `*italics*` or `**bold**`.** Math nested in emphasis won't
 >    render (italics show raw `$…$`; bold may render the math but break the bold).
 >    Keep math outside emphasis spans.
+> 5. **Keep each inline `$…$` on one source line.** Don't let a single math span
+>    wrap across a line break; break the line at a space *between* spans instead.
+> 6. **No literal `$` inside math.** Write currency as an escaped `\$` in plain
+>    prose (e.g. `\$2`), not `$\$2$`.
 >
 > And one *rendering* (not failure) tip: inline use `\frac`, not `\dfrac` —
 > `\dfrac` forces full size and overflows the line. Promote any multi-step
 > computation to its own `$$ … $$` display block.
+>
+> A scanner that checks all of the above lives at `tools/mathscan.py`; run
+> `python3 tools/mathscan.py chapters/*.md` before committing a chapter.
 
 ## Chapter format
 
