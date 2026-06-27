@@ -116,8 +116,8 @@ to be broken. That is the whole secret.
 > the point.)
 
 > **Deeper — irrational exponents.** We have now defined $a^x$ for every
-> *rational* $x$. But what is $2^{\sqrt 2}$? There is no "$\sqrt2$ factors" to
-> count, and $\sqrt2$ is not a fraction. The honest answer is that we define it
+> *rational* $x$. But what is $2^{\sqrt 2}$? There is no way to count $\sqrt2$
+> factors, and $\sqrt2$ is not a fraction. The honest answer is that we define it
 > by *approximation*: $\sqrt2 = 1.41421\ldots$, and we look at
 > $2^{1.4},\, 2^{1.41},\, 2^{1.414},\ldots$ These rational-exponent values close
 > in on a single real number, and *that* limit is what $2^{\sqrt 2}$ means. Making

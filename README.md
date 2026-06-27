@@ -34,9 +34,11 @@ number for ordering. Math is written in LaTeX between `$...$` (inline) and
 >    and won't render it. Inline `$…$` does not need this.
 > 2. **No `\tag{…}`.** It is unsupported; put the label inside the math as text,
 >    e.g. `$$ a^m a^n = a^{m+n}. \qquad \text{(L1)} $$`.
-> 3. **A closing `$` may not touch a letter.** `$n$th` fails to render (the `t`
->    abuts the `$`); a hyphen or space is fine (`$x$-axis` works). For ordinals,
->    fold the suffix into the math: `$n^{\text{th}}$`, `$6^{\text{th}}$`.
+> 3. **Math delimiters must not abut a letter or quote.** A closing `$` followed
+>    by a letter (`$n$th`) fails, and an opening `$` preceded by a quote
+>    (`"$\sqrt2$"`) fails. A hyphen or space is fine (`$x$-axis` works). For
+>    ordinals, fold the suffix into the math: `$n^{\text{th}}$`. For quoted math,
+>    reword so a space or word sits next to the delimiter.
 > 4. **No `$…$` inside `*italics*` or `**bold**`.** Math nested in emphasis won't
 >    render (italics show raw `$…$`; bold may render the math but break the bold).
 >    Keep math outside emphasis spans.
