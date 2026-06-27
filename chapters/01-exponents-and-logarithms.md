@@ -28,7 +28,7 @@ could possibly be, and why the two operations are reflections of each other.
 ## Prerequisites
 
 - Comfort with the arithmetic of fractions and negative numbers.
-- Square roots and $n$th roots.
+- Square roots and $n^{\text{th}}$ roots.
 - The idea of a function and its graph.
 
 ## Exposition
@@ -93,7 +93,7 @@ $$ a^{-n} = \frac{1}{a^n}. $$
 
 **Fractional exponents.** Whatever $a^{1/n}$ is, applying (L1) $n$ times (or
 using (L2)) gives $\left(a^{1/n}\right)^n = a^{\,n \cdot \frac{1}{n}} = a^1 = a$.
-So $a^{1/n}$ must be a number whose $n$th power is $a$ — that is, the $n$th root:
+So $a^{1/n}$ must be a number whose $n^{\text{th}}$ power is $a$ — that is, the $n^{\text{th}}$ root:
 
 $$ a^{1/n} = \sqrt[n]{a}, \qquad a^{p/q} = \sqrt[q]{a^p}. $$
 
@@ -364,7 +364,7 @@ $= \lfloor 69.897\rfloor + 1 = 70$. (Notice we never needed $\log_{10}5$ directl
 $t\left(1 + \tfrac12 + \tfrac13\right) = t \cdot \tfrac{11}{6} = 11$, so $t = 6$
 and $x = 2^6 = 64$.
 
-**9.** Raise both to the $6$th power (the least common multiple of the roots'
+**9.** Raise both to the $6^{\text{th}}$ power (the least common multiple of the roots'
 orders): $\left(\sqrt2\right)^6 = 2^3 = 8$ while $\left(\sqrt[3]{3}\right)^6 =
 3^2 = 9$. Since $9 > 8$ and sixth powers preserve order for positive numbers,
 $\sqrt[3]{3} > \sqrt2$. The technique — turn $\sqrt2$ vs $\sqrt[3]3$ into the

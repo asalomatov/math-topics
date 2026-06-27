@@ -34,6 +34,9 @@ number for ordering. Math is written in LaTeX between `$...$` (inline) and
 >    and won't render it. Inline `$…$` does not need this.
 > 2. **No `\tag{…}`.** It is unsupported; put the label inside the math as text,
 >    e.g. `$$ a^m a^n = a^{m+n}. \qquad \text{(L1)} $$`.
+> 3. **A closing `$` may not touch a letter.** `$n$th` fails to render (the `t`
+>    abuts the `$`); a hyphen or space is fine (`$x$-axis` works). For ordinals,
+>    fold the suffix into the math: `$n^{\text{th}}$`, `$6^{\text{th}}$`.
 
 ## Chapter format
 
