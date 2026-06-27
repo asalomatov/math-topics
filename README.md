@@ -13,15 +13,22 @@ Kolmogorov, AoPS) that every chapter is held to.
 ```
 math-topics/
 ├── README.md
+├── PHILOSOPHY.md             # the measuring stick — read before writing
 ├── chapters/
 │   ├── _TEMPLATE.md          # copy this to start a new chapter
-│   └── 01-quadratic-functions.md
+│   ├── 01-exponents-and-logarithms.md
+│   └── 03-quadratic-functions.md
 └── ...
 ```
 
 Each chapter is a single Markdown file in `chapters/`, prefixed with a two-digit
 number for ordering. Math is written in LaTeX between `$...$` (inline) and
 `$$...$$` (display), which renders on GitHub and in most Markdown viewers.
+
+> **GitHub math gotcha.** GitHub renders math with MathJax but does **not**
+> support `\tag{...}` for equation labels — a `$$ … \tag{…} $$` block silently
+> fails and shows raw source. To label an equation, put the label inside the math
+> as text instead, e.g. `$$ a^m a^n = a^{m+n}. \qquad \text{(L1)} $$`.
 
 ## Chapter format
 

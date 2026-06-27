@@ -41,14 +41,14 @@ $$ a^n = \underbrace{a \cdot a \cdots a}_{n \text{ factors}}. $$
 
 From this single picture, three rules drop out *by counting*. If I multiply $a^m$
 by $a^n$, I am putting $m$ factors next to $n$ factors, so I have $m+n$ of them:
-$$ a^m \cdot a^n = a^{m+n}. \tag{L1} $$
+$$ a^m \cdot a^n = a^{m+n}. \qquad \text{(L1)} $$
 
 If I raise $a^m$ to the power $n$, I have $n$ copies of a block of $m$ factors:
-$$ (a^m)^n = a^{mn}. \tag{L2} $$
+$$ (a^m)^n = a^{mn}. \qquad \text{(L2)} $$
 
 And a product raised to a power distributes, because multiplication doesn't care
 about order:
-$$ (ab)^n = a^n b^n. \tag{L3} $$
+$$ (ab)^n = a^n b^n. \qquad \text{(L3)} $$
 
 These are not laws handed down from above; they are *observations* about what
 happens when you count factors. Of the three, **(L1) is the master rule** — the
@@ -175,7 +175,7 @@ sentence.
 Because the logarithm just *undoes* exponentiation, the laws of logarithms are
 the laws of exponents seen in a mirror. The master rule
 $a^{m} a^{n} = a^{m+n}$, read backwards, becomes the master rule of logarithms:
-$$ \log_a(xy) = \log_a x + \log_a y. \tag{the mirror of L1} $$
+$$ \log_a(xy) = \log_a x + \log_a y. \qquad \text{(the mirror of L1)} $$
 
 Take a moment to feel how remarkable that statement is. **The logarithm converts
 multiplication into addition.** The other two laws follow the same way:
