@@ -54,7 +54,17 @@ What these share — and what we are imitating:
   treated as features worth noticing and naming. A beautiful proof is presented
   as beautiful.
 - **History and people, used sparingly and well.** A historical note earns its
-  place when it illuminates *why* a question was asked, not as trivia.
+  place when it illuminates *why* a question was asked, not as trivia. Placing
+  elementary mathematics in its historical context is encouraged.
+
+## Tone
+
+Cool, matter-of-fact, professional. State things plainly and let the mathematics
+carry the interest. Avoid breathless superlatives ("irresistible," "remarkable,"
+"a magic trick," "gloriously"), manufactured drama, and second-person
+cheerleading ("take a moment to feel," "hold onto it"). Confidence reads as
+restraint, not enthusiasm. The reader is bright; trust the material to land
+without being told how to react to it.
 
 ## What this is NOT
 
