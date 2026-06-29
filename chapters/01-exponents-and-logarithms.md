@@ -134,7 +134,7 @@ $$ f(x) = a^x \qquad (a > 0,\ a \neq 1). $$
 Rewriting the master rule (L1) in this language gives the property that *defines*
 exponential behavior:
 
-$$ f(x + y) = f(x)\,f(y). $$
+$$ f(x + y) = f(x) \cdot f(y). $$
 
 In words: **adding in the input multiplies in the output.** This is the precise
 sense in which exponential growth differs from the growth you are used to.
@@ -269,7 +269,7 @@ story is told properly later.
 - **One master rule**, $a^m a^n = a^{m+n}$, generates everything.
 - **Permanence of form** forces the extended definitions, not convention:
   $a^0 = 1$, $\ a^{-n} = 1/a^n$, $\ a^{p/q} = \sqrt[q]{a^p}$ (for $a>0$).
-- **Exponential = constant ratio per step:** $f(x+y) = f(x)f(y)$; it is the
+- **Exponential = constant ratio per step:** $f(x+y) = f(x) \cdot f(y)$; it is the
   continuous geometric sequence, and it outgrows every polynomial.
 - **A logarithm is an exponent:** $\log_a x = y \iff a^y = x$.
 - **The mirror laws** turn multiplication into addition:
