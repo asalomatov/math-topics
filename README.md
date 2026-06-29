@@ -47,9 +47,10 @@ number for ordering. Math is written in LaTeX between `$...$` (inline) and
 > 6. **No literal `$` inside math.** Write currency as an escaped `\$` in plain
 >    prose (e.g. `\$2`), not `$\$2$`.
 >
-> And one *rendering* (not failure) tip: inline use `\frac`, not `\dfrac` —
-> `\dfrac` forces full size and overflows the line. Promote any multi-step
-> computation to its own `$$ … $$` display block.
+> And a layout rule (the scanner flags it): **avoid stacked fractions in running
+> text.** Both `\dfrac` and `\frac` rise above the line and read poorly inline.
+> Write `a/b` (or `(num)/(den)`) inline, and reserve `\frac` for `$$ … $$`
+> display blocks, where it renders at full size correctly.
 >
 > A scanner that checks all of the above lives at `tools/mathscan.py`; run
 > `python3 tools/mathscan.py chapters/*.md` before committing a chapter.

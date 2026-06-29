@@ -43,10 +43,10 @@ The axis of symmetry is
 
 $$ x = -\frac{b}{2a}, $$
 
-and the vertex is the point $\left(-\frac{b}{2a},\; f\!\left(-\frac{b}{2a}\right)\right)$.
+and the vertex is the point $\left(-b/(2a),\; f(-b/(2a))\right)$.
 
 > **Example.** For $f(x) = x^2 - 6x + 5$ we have $a=1,\ b=-6$, so the axis is
-> $x = -\frac{-6}{2} = 3$. Then $f(3) = 9 - 18 + 5 = -4$, so the vertex is
+> $x = -(-6)/2 = 3$. Then $f(3) = 9 - 18 + 5 = -4$, so the vertex is
 > $(3, -4)$.
 
 ### 3. Vertex form and completing the square
@@ -88,7 +88,7 @@ many real roots there are:
 | $D < 0$ | none | does not meet the $x$-axis |
 
 > **Example.** For $x^2 - 6x + 5 = 0$: $D = 36 - 20 = 16 > 0$, and
-> $x = \frac{6 \pm 4}{2}$, giving $x = 5$ and $x = 1$.
+> $x = (6 \pm 4)/2$, giving $x = 5$ and $x = 1$.
 
 ### 5. Factored form and Vieta's formulas
 
@@ -109,10 +109,10 @@ These let you read off or check roots without the full formula.
 
 - **Three forms:** standard $ax^2+bx+c$, vertex $a(x-h)^2+k$, factored
   $a(x-x_1)(x-x_2)$.
-- **Axis of symmetry:** $x = -\frac{b}{2a}$; the vertex sits on it.
-- **Quadratic formula:** $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$.
+- **Axis of symmetry:** $x = -b/(2a)$; the vertex sits on it.
+- **Quadratic formula:** $x = (-b \pm \sqrt{b^2-4ac})/(2a)$.
 - **Discriminant** $D = b^2 - 4ac$: sign gives the number of real roots.
-- **Vieta:** $x_1 + x_2 = -\frac{b}{a}$, $\ x_1 x_2 = \frac{c}{a}$.
+- **Vieta:** $x_1 + x_2 = -b/a$, $\ x_1 x_2 = c/a$.
 
 ## Exercises
 
@@ -144,10 +144,10 @@ These let you read off or check roots without the full formula.
 
 **3.** $x^2 + 8x + 11 = (x^2 + 8x + 16) - 16 + 11 = (x+4)^2 - 5$. Vertex $(-4, -5)$.
 
-**4.** $D = 49 - 24 = 25$, so $x = \frac{7 \pm 5}{4}$, giving $x = 3$ and
+**4.** $D = 49 - 24 = 25$, so $x = (7 \pm 5)/4$, giving $x = 3$ and
 $x = \tfrac{1}{2}$.
 
-**5.** Sum $= -\frac{-12}{3} = 4$; product $= \frac{5}{3}$.
+**5.** Sum $= -(-12)/3 = 4$; product $= 5/3$.
 
 **6.** One real root means $D = 0$: $m^2 - 36 = 0$, so $m = \pm 6$.
 

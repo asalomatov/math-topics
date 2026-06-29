@@ -92,7 +92,7 @@ $a^n$:
 $$ a^{-n} = \frac{1}{a^n}. $$
 
 **Fractional exponents.** Whatever $a^{1/n}$ is, applying (L1) $n$ times (or
-using (L2)) gives $\left(a^{1/n}\right)^n = a^{\,n \cdot \frac{1}{n}} = a^1 = a$.
+using (L2)) gives $\left(a^{1/n}\right)^n = a^{\,n \cdot (1/n)} = a^1 = a$.
 So $a^{1/n}$ must be a number whose $n^{\text{th}}$ power is $a$ — that is, the $n^{\text{th}}$ root:
 
 $$ a^{1/n} = \sqrt[n]{a}, \qquad a^{p/q} = \sqrt[q]{a^p}. $$
@@ -268,13 +268,13 @@ story is told properly later.
 
 - **One master rule**, $a^m a^n = a^{m+n}$, generates everything.
 - **Permanence of form** forces the extended definitions, not convention:
-  $a^0 = 1$, $\ a^{-n} = \frac{1}{a^n}$, $\ a^{p/q} = \sqrt[q]{a^p}$ (for $a>0$).
+  $a^0 = 1$, $\ a^{-n} = 1/a^n$, $\ a^{p/q} = \sqrt[q]{a^p}$ (for $a>0$).
 - **Exponential = constant ratio per step:** $f(x+y) = f(x)f(y)$; it is the
   continuous geometric sequence, and it outgrows every polynomial.
 - **A logarithm is an exponent:** $\log_a x = y \iff a^y = x$.
 - **The mirror laws** turn multiplication into addition:
   $\log_a(xy) = \log_a x + \log_a y$, $\ \log_a(x^k) = k\log_a x$, and
-  $\log_a x = \frac{\log_b x}{\log_b a}$.
+  $\log_a x = \log_b x / \log_b a$.
 - **Logs measure scale:** a base-$10$ integer $N$ has $\lfloor \log_{10}N\rfloor + 1$
   digits.
 
@@ -285,10 +285,10 @@ story is told properly later.
 1. Using only the master rule $a^m a^n = a^{m+n}$, explain why $a^0$ must equal
    $1$ and why $a^{-1}$ must equal $1/a$.
 2. Evaluate without a calculator: $27^{2/3}$, $16^{-3/4}$, $\left(\tfrac19\right)^{-1/2}$.
-3. Simplify to a single power: $2^5 \cdot 2^{-3}$; $(x^3)^2 \cdot x^{-4}$; $\frac{a^{-2}}{a^{-5}}$.
+3. Simplify to a single power: $2^5 \cdot 2^{-3}$; $(x^3)^2 \cdot x^{-4}$; $a^{-2}/a^{-5}$.
 4. Evaluate directly from the definition: $\log_2 32$, $\log_9 3$, $\log_{1/2} 8$, $\log_{10} 0.001$.
 5. Write as a single logarithm and evaluate: $\log_5 12 - \log_5 4$.
-6. Expand $\log_b \frac{a^2 b}{c}$ in terms of $\log_b a$ and $\log_b c$.
+6. Expand $\log_b(a^2 b / c)$ in terms of $\log_b a$ and $\log_b c$.
 7. Solve: $2^x = \tfrac{1}{16}$, and $8^{x} = 16$.
 8. Solve: $\log_x 27 = 3$, and $\log_4 x = -\tfrac12$.
 9. Compute $\log_2 3 \cdot \log_3 4 \cdot \log_4 5 \cdot \log_5 6 \cdot \log_6 7 \cdot \log_7 8$.
@@ -320,7 +320,7 @@ story is told properly later.
     $2025\log_{10}2$ determines the leading (leftmost) digit.
 21. Solve $\log_2\!\big(\log_3(\log_4 x)\big) = 0$.
 22. Let $N = 100!$. Evaluate
-    $\frac{1}{\log_2 N} + \frac{1}{\log_3 N} + \cdots + \frac{1}{\log_{100} N}$.
+    $1/\log_2 N + 1/\log_3 N + \cdots + 1/\log_{100} N$.
 
 ## Solutions
 
@@ -333,19 +333,19 @@ the factor $a^{-1}$ is the reciprocal of $a$, so $a^{-1} = 1/a$. Both are forced
 by (L1), not chosen.
 
 **2.** $27^{2/3} = (\sqrt[3]{27})^2 = 3^2 = 9$.
-$16^{-3/4} = \frac{1}{(\sqrt[4]{16})^3} = \frac{1}{2^3} = \frac18$.
+$16^{-3/4} = 1/(\sqrt[4]{16})^3 = 1/2^3 = 1/8$.
 $\left(\tfrac19\right)^{-1/2} = 9^{1/2} = 3$.
 
 **3.** $2^5 \cdot 2^{-3} = 2^2 = 4$. $(x^3)^2 \cdot x^{-4} = x^6 \cdot x^{-4} = x^2$.
-$\frac{a^{-2}}{a^{-5}} = a^{-2-(-5)} = a^3$.
+$a^{-2}/a^{-5} = a^{-2-(-5)} = a^3$.
 
 **4.** $\log_2 32 = 5$; $\log_9 3 = \tfrac12$; $\log_{1/2} 8 = -3$ (since
 $(1/2)^{-3} = 8$); $\log_{10} 0.001 = -3$.
 
-**5.** $\log_5 12 - \log_5 4 = \log_5 \frac{12}{4} = \log_5 3$. It is not a round
-number, which is fine; the point is the quotient law.
+**5.** $\log_5 12 - \log_5 4 = \log_5(12/4) = \log_5 3$. It is not a round number,
+which is fine; the point is the quotient law.
 
-**6.** $\log_b \frac{a^2 b}{c} = \log_b a^2 + \log_b b - \log_b c = 2\log_b a + 1 - \log_b c$,
+**6.** $\log_b(a^2 b / c) = \log_b a^2 + \log_b b - \log_b c = 2\log_b a + 1 - \log_b c$,
 using $\log_b b = 1$.
 
 **7.** $2^x = 2^{-4}$ gives $x = -4$. For $8^x = 16$, write both sides in base $2$:
@@ -354,8 +354,8 @@ $2^{3x} = 2^4$, so $3x = 4$ and $x = \tfrac43$.
 **8.** $\log_x 27 = 3$ means $x^3 = 27$, so $x = 3$. $\log_4 x = -\tfrac12$ means
 $x = 4^{-1/2} = \tfrac12$.
 
-**9.** Change every factor to base $2$: $\log_k(k+1) = \frac{\log_2(k+1)}{\log_2 k}$.
-The product telescopes,
+**9.** Change every factor to base $2$: $\log_k(k+1) = \log_2(k+1)/\log_2 k$. The
+product telescopes,
 
 $$ \frac{\log_2 3}{\log_2 2}\cdot\frac{\log_2 4}{\log_2 3}\cdots\frac{\log_2 8}{\log_2 7}
 = \frac{\log_2 8}{\log_2 2} = \log_2 8 = 3. $$
@@ -363,8 +363,8 @@ $$ \frac{\log_2 3}{\log_2 2}\cdot\frac{\log_2 4}{\log_2 3}\cdots\frac{\log_2 8}{
 Every interior factor cancels — the same collapse seen in telescoping sums and
 products generally.
 
-**10.** $\log_8 32 = \frac{\log_2 32}{\log_2 8} = \frac{5}{3}$.
-$\log_9 27 = \frac{\log_3 27}{\log_3 9} = \frac{3}{2}$.
+**10.** $\log_8 32 = \log_2 32 / \log_2 8 = 5/3$.
+$\log_9 27 = \log_3 27 / \log_3 9 = 3/2$.
 
 **11.** Combine: $\log_2[x(x-2)] = 3$, so $x(x-2) = 8$, i.e. $x^2 - 2x - 8 = 0$,
 giving $x = 4$ or $x = -2$. The term $\log_2(x-2)$ requires $x > 2$, so $x = 4$. A
@@ -374,11 +374,11 @@ root.
 **12.** Three weeks is $21$ days $= 21/5 = 4.2$ half-lives, so the fraction
 remaining is $2^{-4.2}$. Since $2^{4.2} \approx 18.4$, this is about $0.054$.
 
-**13.** $\log_{10}(5^{100}) = 100\log_{10}5 = 100\log_{10}\frac{10}{2} = 100(1 - \log_{10}2) \approx 69.897$.
+**13.** $\log_{10}(5^{100}) = 100\log_{10}5 = 100\log_{10}(10/2) = 100(1 - \log_{10}2) \approx 69.897$.
 Digit count $= \lfloor 69.897\rfloor + 1 = 70$. We obtained $\log_{10}5$ from
 $\log_{10}2$ alone.
 
-**14.** With $t = \log_2 x$: $\log_4 x = \frac t2$ and $\log_8 x = \frac t3$. Then
+**14.** With $t = \log_2 x$: $\log_4 x = t/2$ and $\log_8 x = t/3$. Then
 $t\left(1 + \tfrac12 + \tfrac13\right) = t \cdot \tfrac{11}{6} = 11$, so $t = 6$
 and $x = 2^6 = 64$.
 
@@ -387,7 +387,7 @@ $2^x = 1$ or $2^x = 2$, giving $x = 0$ or $x = 1$. Writing $4^x = (2^x)^2$ turns
 the equation into a quadratic — a recurring move.
 
 **16.** Take $\log$ of both sides (any base): $x\log 2 = (x-1)\log 3$, so
-$x(\log 2 - \log 3) = -\log 3$ and $x = \frac{\log 3}{\log 3 - \log 2} = \log_{3/2} 3 \approx 2.71$.
+$x(\log 2 - \log 3) = -\log 3$ and $x = (\log 3)/(\log 3 - \log 2) = \log_{3/2} 3 \approx 2.71$.
 
 **17.** $9^{\log_3 4} = (3^2)^{\log_3 4} = 3^{2\log_3 4} = 3^{\log_3 16} = 16$.
 $2^{\log_4 9} = 2^{(\log_2 9)/2} = (2^{\log_2 9})^{1/2} = 9^{1/2} = 3$. Both use
@@ -412,8 +412,8 @@ split of §5.
 **21.** Work outward. $\log_2(\cdot) = 0$ means the argument is $1$, so
 $\log_3(\log_4 x) = 1$. Then $\log_4 x = 3$, so $x = 4^3 = 64$.
 
-**22.** Use $\frac{1}{\log_k N} = \log_N k$ (the reciprocal of change of base). The
-sum becomes $\log_N 2 + \log_N 3 + \cdots + \log_N 100 = \log_N(2 \cdot 3 \cdots 100) = \log_N(100!)$.
+**22.** Use $1/\log_k N = \log_N k$ (the reciprocal of change of base). The sum
+becomes $\log_N 2 + \log_N 3 + \cdots + \log_N 100 = \log_N(2 \cdot 3 \cdots 100) = \log_N(100!)$.
 With $N = 100!$ this is $\log_{100!}(100!) = 1$.
 
 </details>

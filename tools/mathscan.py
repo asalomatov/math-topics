@@ -31,12 +31,31 @@ def scan(path):
         # escaped \$ (literal dollar in prose) -> not a delimiter
         masked[i] = masked[i].replace('\\$', '\x01\x01')
 
-    # ---- 1. \tag and \dfrac ----
+    # ---- mark which lines are inside a display $$ block ----
+    in_display_lines = set()
+    di = 0
+    while di < len(lines):
+        c = lines[di].count('$$')
+        if c >= 2:
+            in_display_lines.add(di); di += 1; continue
+        if c == 1:
+            dj = di+1
+            while dj < len(lines) and lines[dj].count('$$') == 0:
+                dj += 1
+            for k in range(di, min(dj, len(lines))+1):
+                in_display_lines.add(k)
+            di = dj+1; continue
+        di += 1
+
+    # ---- 1. \tag, and inline \frac/\dfrac (overflow risk; use / or display) ----
     for i, ln in enumerate(lines):
         if '\\tag' in ln:
             issues.append((i+1, 'TAG', ln.strip()))
-        if '\\dfrac' in ln:
-            issues.append((i+1, 'DFRAC(inline-overflow risk)', ln.strip()))
+        if i not in in_display_lines:
+            for cmd in ('\\dfrac', '\\frac'):
+                if cmd in ln:
+                    issues.append((i+1, 'INLINE-FRAC (use / or a display block)', ln.strip()))
+                    break
 
     # ---- 2. display $$ blocks: blank line before & after ----
     # find lines that contain $$ ; classify open/close
